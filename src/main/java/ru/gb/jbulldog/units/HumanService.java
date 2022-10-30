@@ -15,6 +15,10 @@ public class HumanService {
         this.humanRepository = new HumanRepository();
     }
 
+    public HumanService(HumanRepository humanRepository) {
+        this.humanRepository = humanRepository;
+    }
+
     List<Human> getHumansByProfessionCode(final List<Human> humans, final int code){
         if(humans == null || humans.isEmpty()){
             log.fine("Empty humans list!");
@@ -48,5 +52,11 @@ public class HumanService {
         List<Human> humans = humanRepository.getAll();
         //...
         return humans;
+    }
+
+    public Human getHumansByName(String name) {
+        Human human = humanRepository.getHumanByName(name);
+        //...
+        return human;
     }
 }
