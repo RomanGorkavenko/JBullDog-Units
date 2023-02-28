@@ -1,9 +1,9 @@
 package ru.gb.jbulldog.units;
 
 public class Human {
-    private Profession profession;
+    private final Profession profession;
 
-    public Human(final Profession profession) {
+    public Human(Profession profession) {
         this.profession = profession;
     }
 

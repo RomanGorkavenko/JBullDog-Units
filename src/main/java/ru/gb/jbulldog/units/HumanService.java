@@ -8,7 +8,7 @@ import java.util.logging.Logger;
 public class HumanService {
 
     Logger log;
-    private HumanRepository humanRepository;
+    private final HumanRepository humanRepository;
 
     public HumanService() {
         this.log = Logger.getLogger(HumanService.class.getName());
