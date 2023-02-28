@@ -9,4 +9,9 @@ public class HumanRepository {
         return new ArrayList<Human>();
     }
 
+    public Human getHumanByName(String name) {
+        //return new Human(name);
+        return null;
+    }
+
 }
